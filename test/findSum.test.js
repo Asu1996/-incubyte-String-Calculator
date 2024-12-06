@@ -22,4 +22,10 @@ describe('Basic tests', () => {
     const result = sumOfNumbers('1,5\n2')
     expect(result).to.equal(8)
   })
+
+  it('handles custom delimiters', () => {
+    const result = sumOfNumbers('//;\n1;2')
+    expect(result).to.equal(3);
+});
+
 })
