@@ -12,4 +12,14 @@ describe('Basic tests', () => {
     const result = sumOfNumbers('2')
     expect(result).to.equal(2)
   })
+
+  it('dev test 1', () => {
+    const result = sumOfNumbers('1,5')
+    expect(result).to.equal(6)
+  })
+
+  it('dev test 1', () => {
+    const result = sumOfNumbers('1,5\n2')
+    expect(result).to.equal(8)
+  })
 })
